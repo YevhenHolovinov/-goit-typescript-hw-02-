@@ -1,19 +1,22 @@
-import { ClipLoader } from 'react-spinners';
+import ClipLoader from "react-spinners/ClipLoader";
+
 import css from './Loader.module.css';
 
-const Loader = () => {
-  return (
-    <div className={css.loader}>
-      <ClipLoader
-        color="#646cff"
-        loading="true"
-        cssOverride={{}}
-        size={100}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-      />
-    </div>
-  );
+
+export default function Loader  ()  {
+	return (
+		<div className={css.loader}>
+        <ClipLoader
+          cssOverride={true}
+          size={150}
+          color={"#123abc"}
+          loading={true}
+          speedMultiplier={1.5}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+      </div>
+	);
 };
 
-export default Loader;
+ 
