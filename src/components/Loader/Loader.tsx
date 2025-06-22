@@ -6,7 +6,7 @@ export default function Loader() {
   return (
     <div className={css.loader}>
       <ClipLoader
-        cssOverride={true}
+        //cssOverride={true}
         size={150}
         color={'#123abc'}
         loading={true}

@@ -23,7 +23,6 @@ const fetchGalleryPhotos = async (
       page,
     },
   });
-
   return response.data;
 };
 
