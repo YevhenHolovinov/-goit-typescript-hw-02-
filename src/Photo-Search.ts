@@ -17,12 +17,15 @@ const fetchGalleryPhotos = async (
   query: string,
   page: number
 ): Promise<FetchGalleryPhotosResponse> => {
-  const response = await axios.get('/search/photos', {
-    params: {
-      query,
-      page,
-    },
-  });
+  const response = await axios.get<FetchGalleryPhotosResponse>(
+    '/search/photos',
+    {
+      params: {
+        query,
+        page,
+      },
+    }
+  );
   return response.data;
 };
 
